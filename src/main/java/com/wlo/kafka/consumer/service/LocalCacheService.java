@@ -36,19 +36,8 @@ public class LocalCacheService {
         loadCache();
     }
 
-    public EventParams getById(Long id) {
-        return cache.get(id);
+    public List<EventParams> getAllCache() {
+        return cache.values().stream().toList();
     }
 
-    public void putInCache(Long id, EventParams entity) {
-        cache.put(id, entity);
-    }
-
-    public void removeFromCache(Long id) {
-        cache.remove(id);
-    }
-
-    public void clearCache() {
-        cache.clear();
-    }
 }

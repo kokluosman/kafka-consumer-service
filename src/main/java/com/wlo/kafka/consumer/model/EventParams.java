@@ -20,7 +20,7 @@ public class EventParams {
 
     private String operationCode;
 
-    private String operationActivity;
+    private String operationId;
 
     private String serviceName;
 }

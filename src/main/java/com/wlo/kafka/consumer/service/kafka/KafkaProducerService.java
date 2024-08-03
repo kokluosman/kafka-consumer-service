@@ -1,4 +1,4 @@
-package com.wlo.kafka.consumer.service;
+package com.wlo.kafka.consumer.service.kafka;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -21,7 +21,7 @@ public class KafkaProducerService {
         this.objectMapper = objectMapper;
     }
 
-    @Scheduled(fixedRate = 1000) // Send 10 events per second
+    @Scheduled(fixedRate = 1000) // Send an events per second
     public void sendMessage() {
         String topic = "kafka-events";
         String key = "wlo";
