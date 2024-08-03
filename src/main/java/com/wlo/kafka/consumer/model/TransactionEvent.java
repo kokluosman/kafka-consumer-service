@@ -11,6 +11,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 @EqualsAndHashCode
 @Table(name = "transaction_log")
 @Entity
+@ToString
 public class TransactionEvent {
 
     @Id
